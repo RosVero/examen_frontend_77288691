@@ -1,0 +1,19 @@
+mat-form-field{
+    width:300px;
+}
+
+.cabecera{
+    text-align:left !important;
+}
+
+.text-left{
+    text-align:left !important;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    text-align: center !important;
+}

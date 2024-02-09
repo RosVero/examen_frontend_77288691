@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  th{
+      text-align: center !important;
+  }
+  
+  th.mat-header-cell.cdk-header-cell.cdk-column-description.mat-column-description.ng-star-inserted {
+    width: 40%;
+  }

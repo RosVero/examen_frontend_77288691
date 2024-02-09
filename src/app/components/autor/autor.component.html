@@ -1,0 +1,20 @@
+<div>
+    <mat-card class="example-card" style="width:600px;">
+        <mat-card-header>
+            <mat-card-title>
+                <i class="fa fa-user"></i>
+                AUTOR
+            </mat-card-title>
+        </mat-card-header>
+        <form ngNativeValidate #f="ngForm" (ngSubmit)="guardar(f.value)">
+            <mat-form-field appearance="fill">
+                <mat-label>Nombre del Autor</mat-label>
+                <input required matInput id="name" name="name" class="w-500" [(ngModel)]="autor.name">
+            </mat-form-field>
+            <div class="d-flex justify-content-end">
+                <button type="button" mat-dialog-close mat-raised-button color="secondary" class="mx-1">CANCELAR</button>
+                <button type="submit" mat-dialog-close mat-raised-button color="accent" class="mx-1">{{data.id != 0? 'ACTUALIZAR':'GUARDAR'}}</button>
+            </div>
+        </form>
+    </mat-card>
+</div>

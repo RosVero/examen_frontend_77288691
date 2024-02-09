@@ -1,0 +1,38 @@
+<div class="container mt-4">
+    <div class="card principal" class="d-flex justify-content-center" style="
+    flex-flow: wrap;">
+        <a [routerLink]="['/principal/reporte1']" >
+            <mat-card class="example-card bg-success p-3" style="width:300px; height:250px;">
+                <div class="col">
+                    <div class="text-center icono-card">
+                        <img width="100" src="../../../assets/img/flat/estante-para-libros.png" alt="libros">
+                    </div>
+                    <div class="content-card pt-3">
+                        <mat-card-title class="text-white text-center">Libros Vencidos</mat-card-title>
+                        <mat-card-subtitle class="text-white text-center">Muestra la lista de clientes con libros vencidos</mat-card-subtitle>
+                    </div>
+                </div>
+            </mat-card>    
+        </a>
+
+        <a [routerLink]="['/principal/reporte2']" >
+            <mat-card class="example-card bg-success p-3" style="width:300px; height:250px;">
+                <div class="col">
+                    <div class="text-center icono-card">
+                        <img width="100" src="../../../assets/img/flat/libro-abierto.png" alt="libros">
+                    </div>
+                    <div class="content-card pt-3">
+                        <mat-card-title class="text-white text-center">Prestamos Segmentados</mat-card-title>
+                        <mat-card-subtitle class="text-white text-center">Muestra la lista de prestamos segmentados por semana y por mes</mat-card-subtitle>
+                    </div>
+                </div>
+            </mat-card>    
+        </a>
+        
+        </div>
+        <div class="d-flex justify-content-center my-5">
+            <button mat-raised-button color="warn" [routerLink]="['/principal']">
+                <span class="ms-1">IR A PRINCIPAL</span>
+            </button>
+        </div>
+    </div>

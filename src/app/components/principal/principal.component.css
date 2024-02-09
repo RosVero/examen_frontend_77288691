@@ -1,0 +1,23 @@
+mat-card{
+    width:90%;
+    height: 750px;
+}
+
+.bg-light{
+    background-color: fafafa;
+}
+
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+  }
+
+  #contenido{
+      max-width: 70%;
+      margin: 20px auto;
+      background-color: #fff !important;
+  }

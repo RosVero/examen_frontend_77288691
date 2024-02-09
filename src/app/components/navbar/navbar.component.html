@@ -1,0 +1,38 @@
+<p>
+    <mat-toolbar color="accent">
+        <a mat-button [routerLink]="['dashboard']">
+            <i class="fa fa-book fa-2x"></i>
+            <span class="h2 ms-2">Biblioteca</span>
+        </a>
+        <span class="example-spacer"></span>
+
+        <button mat-icon-button [routerLink]="['dashboard']" aria-label="Ir a Principal" matTooltip="Principal">
+            <mat-icon>home</mat-icon>
+        </button>
+        <button mat-icon-button [matMenuTriggerFor]="menu" matTooltip="Mòdulos">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item [routerLink]="['/principal/autores']">
+              <mat-icon>how_to_reg</mat-icon>
+              <span>Autores</span>
+            </button>
+            <button mat-menu-item [routerLink]="['/principal/clientes']">
+              <mat-icon>supervised_user_circle</mat-icon>
+              <span>Clientes</span>
+            </button>
+            <button mat-menu-item [routerLink]="['/principal/libros']">
+              <mat-icon>library_books</mat-icon>
+              <span>Libros</span>
+            </button>
+            <button mat-menu-item [routerLink]="['/principal/prestamos']">
+                <mat-icon>dvr</mat-icon>
+                <span>Prestamos</span>
+            </button>
+            <button mat-menu-item [routerLink]="['/']">
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Salir</span>
+            </button>
+          </mat-menu>
+      </mat-toolbar>
+</p>
